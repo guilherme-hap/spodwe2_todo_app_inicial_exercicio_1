@@ -32,7 +32,7 @@ function renderTodos(todoList) {
             const markTodoAsDoneButton = document.createElement("button");
             markTodoAsDoneButton.textContent = "Concluir";
             markTodoAsDoneButton.onclick = function () {
-                todo.done = true;
+                markTodoAsDone(todo.id);
                 renderFilter();
             };
             todoItemLi.appendChild(markTodoAsDoneButton);
